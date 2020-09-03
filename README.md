@@ -58,23 +58,6 @@ Plan, at a high level
 - Create a 'post-create' component to create posts
 - Create a 'post-list' component to display posts
 
-
-#### Create model ####
-Create the model as an interface, as we will need this only to enforce structure i.e. type-checking. 
-Create a folder 'posts' under 'src/app' folder and create a new file by the name ```post.model.ts```  
-```
-export interface Post {
-  title: string;
-  content: string;
-}
-```
-
-#### Create service ####
-Create a service to add and retrieve posts.   
-```ng g s posts/post```
-_*Note:* Services are also a great way for different components in the application to access the same set of data. Alternatively, data can also be shared between components using the Angular's core EventEmitter by creating chains of property (@Input) and event (@Output) binding, but this pattern becomes difficult to manage as the application grows.
-We will instead be using ```rxjs``` observables to communicate(publish) changes to the data from service to individual components(subscribers)_
-
 #### Create Components ####
 
 Application header component  
@@ -91,6 +74,23 @@ Component to create posts
 
 Component to list posts  
 ```ng g c posts/post-list```
+
+
+#### Create model ####
+Create the model as an interface, as we will need this only to enforce structure i.e. type-checking. 
+Create a new file by the name ```post.model.ts``` under the 'posts' folder
+```
+export interface Post {
+  title: string;
+  content: string;
+}
+```
+
+#### Create service ####
+Create a service to add and retrieve posts.   
+```ng g s posts/post```  
+_*Note:* Services are also a great way for different components in the application to access the same set of data. Alternatively, data can also be shared between components using the Angular's core EventEmitter by creating chains of property (@Input) and event (@Output) binding, but this pattern becomes difficult to manage as the application grows.
+We will instead be using ```rxjs``` observables to communicate(publish) changes to the data from service to individual components(subscribers)_
 
 Refer to the source code in this repo to understand how all these components come together to achieve the desired functionality.
 
