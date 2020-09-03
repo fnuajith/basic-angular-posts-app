@@ -17,6 +17,8 @@ The application will use
 - [x] [Angular Routing](https://angular.io/guide/router)
 - [x] [Angular Material](https://material.angular.io/)
 
+### Setting up the project ###
+
 Create a new angular project by running the below command  
 ```ng new basic-angular-posts-app```  
 Select 'y' when prompted if you want to add Routing into the application Select 'SCSS' when prompted to select styling
