@@ -78,7 +78,7 @@ Component to list posts
 
 #### Create model ####
 Create the model as an interface, as we will need this only to enforce structure i.e. type-checking. 
-Create a folder 'posts' under 'src/app' folder and create a new file by the name ```post.model.ts```  
+Create a new file by the name ```post.model.ts``` under the 'posts' folder
 ```
 export interface Post {
   title: string;
