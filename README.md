@@ -88,7 +88,7 @@ export interface Post {
 
 #### Create service ####
 Create a service to add and retrieve posts.   
-```ng g s posts/post```
+```ng g s posts/post```  
 _*Note:* Services are also a great way for different components in the application to access the same set of data. Alternatively, data can also be shared between components using the Angular's core EventEmitter by creating chains of property (@Input) and event (@Output) binding, but this pattern becomes difficult to manage as the application grows.
 We will instead be using ```rxjs``` observables to communicate(publish) changes to the data from service to individual components(subscribers)_
 
