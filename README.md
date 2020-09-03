@@ -26,7 +26,7 @@ Select 'y' when prompted if you want to add Routing into the application Select 
 Navigate into the project  
 ```cd basic-angular-posts-app```
 
-Check if the boiler plate app works fine by running the below command  
+Check if the boilerplate app works fine by running the below command  
 ```ng serve```
 
 Once the code gets compiled, the below message should get printed on the command prompt  
