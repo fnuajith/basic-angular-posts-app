@@ -4,10 +4,10 @@ What we have here is a basic angular application where users can
 - Create posts   
 - List posts
 
-Home page  
+#### Home page ####  
 ![home-page](/docs/images/home-page.JPG)  
 
-Posts page  
+#### Posts page  ####  
 ![posts-page](/docs/images/posts-page.JPG)
 
 The application will use
